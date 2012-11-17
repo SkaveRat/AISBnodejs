@@ -6,6 +6,8 @@ Introduction
 
 This is a client for the networkClient of [AI Sandbox](http://aisandbox.com/).
 
+**WARNING:** The API is not finished and will probably change in the future!
+
 Usage example
 -----
 
