@@ -9,7 +9,7 @@ This is a client for the networkClient of [AI Sandbox](http://aisandbox.com/).
 Usage example
 -----
 
-	var SandboxClient = require('./lib/sandboxClient.js').SandBoxClient;
+	var SandboxClient = require('./lib/sandboxClient.js');
 
 	var client = new SandboxClient("myBotName");
 	client.connect();
