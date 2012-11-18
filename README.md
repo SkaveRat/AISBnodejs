@@ -81,7 +81,8 @@ Example:
 	function(tickdata){}
 
 Contains the tickdata of the current tick.
-[See AI Sandbox Docs for Gameinfo](http://aisandbox.com/documentation/network.html#gameinfo)
+
+See gameinfo Event for datasctructure
 
 This event is fired about every 0.1s
 
@@ -91,7 +92,48 @@ This event is fired about every 0.1s
 
 The initial gameinfo event. Fired once after initialization of game.
 
-[See AI Sandbox Docs for Gameinfo](http://aisandbox.com/documentation/network.html#gameinfo)
+Data structure example:
+
+	{ myTeam:
+	   { name: 'Blue',
+		 members: [ 'Blue0', 'Blue1', 'Blue2', 'Blue3', 'Blue4' ],
+		 flagScoreLocation: [ 82, 20 ],
+		 flag: 'BlueFlag',
+		 botSpawnArea: [ [50,50], [100,100] ] },
+	  enemyTeam:
+	   { name: 'Red',
+		 members: [ 'Red0', 'Red1', 'Red2', 'Red3', 'Red4' ],
+		 flagScoreLocation: [ 6, 30 ],
+		 flag: 'RedFlag',
+		 botSpawnArea: [ [5,5], [10,10] ] },
+	  flags:
+	   { BlueFlag:
+		  { position: [50, 50],
+			carrier: null,
+			name: 'BlueFlag',
+			respawnTimer: 0.1,
+			team: 'Blue' },
+		 RedFlag:
+		  { position: [10, 20],
+			carrier: null,
+			name: 'RedFlag',
+			respawnTimer: 0.1,
+			team: 'Red' } },
+	  bots:
+	   { Red3:
+		  { seenBy: [],
+			state: 0,
+			health: 0,
+			name: 'Red3',
+			team: 'Red',
+			visibleEnemies: [],
+			position: null,
+			flag: null,
+			facingDirection: null,
+			seenlast: null },
+	   [...]
+	   }
+	}
 
 ### Event: levelinfo
 
