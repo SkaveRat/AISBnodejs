@@ -4,9 +4,9 @@ AI Sandbox - nodeJS client
 Introduction
 ------------
 
-This is a client for the networkClient of [AI Sandbox](http://aisandbox.com/).
+This is a very basic client for the networkClient of [AI Sandbox](http://aisandbox.com/).
 
-**WARNING:** The API is not finished and will probably change in the future!
+As this is the first release, there will probably be bugs. Please report bugs to the [issue list](https://github.com/SkaveRat/AISBnodejs/issues)
 
 Usage example
 -----
